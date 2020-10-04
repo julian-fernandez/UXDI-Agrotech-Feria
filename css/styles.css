@@ -7,7 +7,7 @@ body {
 }
 
 p{
-    margin-bottom:0;
+    margin:0;
 }
 
 *{
@@ -16,7 +16,7 @@ p{
 
 .header{
     background-color:#0171ED;
-    padding: 10px 0;
+    padding: 10px 15px;
     color:#ffffff;
 }
 
@@ -53,7 +53,6 @@ p{
 }
 
 .row{
-    padding:0 15px;
     -webkit-display: flex;
     -webkit-align-items: center;
     display: flex;
@@ -66,4 +65,71 @@ p{
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.filter-collapse{
+    display: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    border: 1px solid #94E1B7;
+    right: 10px;
+    top: 65px;
+}
+.filter-collapse ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    min-width: 130px;
+    font-size: .8rem;
+}
+.filter-collapse ul li{
+    border-bottom: 1px solid #94E1B7;
+    padding: 5px 10px;
+    color:#7F7D94;
+}
+.filter-collapse ul li.selected{
+    font-weight:bold;
+    color:#000000;
+}
+.collapsed{
+    display:inline-block;
+}
+
+.home-page{
+    background-color:#F8F9FA;
+    height:100%;
+    padding:15px;
+}
+.home-page h1{
+    font-size:2.5rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+.product-card{
+    background-color:#FFFFFF;
+    border-radius:15px;
+    padding:10px;
+    text-align:center;
+}
+.product-card .card-image{
+    margin-bottom:10px;
+}
+.product-card .card-text{
+    text-align:left;
+}
+.product-card .card-title{
+    font-weight:600;
+    margin:0;
+}
+.product-card .card-rating{
+    font-weight:400;
+}
+.product-card .card-rating img{
+    display:inline;
+}
+.product-card .card-rating p{
+    display:inline;
+    font-size:.75rem;
 }

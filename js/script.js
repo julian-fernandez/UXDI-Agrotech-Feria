@@ -1,0 +1,18 @@
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+$(document).on("touchstart", "#searchfilter", function(){
+    console.log("click");
+    if (!$("#filter-collapse").hasClass("collapsed")){
+        $( "#filter-collapse" ).addClass( "collapsed" );
+    }
+    else{
+        $( "#filter-collapse" ).removeClass( "collapsed" );
+    }
+});
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.splide' ).mount();
+} );
