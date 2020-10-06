@@ -13,6 +13,8 @@ $(document).on("touchstart", "#searchfilter", function(){
     }
 });
 
-document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '.splide' ).mount();
-} );
+
+$( "#search" ).submit(function( event ) {
+    console.log( "Handler for .submit() called." );
+    window.location.href = "searchresults.html";
+  });
