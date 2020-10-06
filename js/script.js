@@ -16,5 +16,6 @@ $(document).on("touchstart", "#searchfilter", function(){
 
 $( "#search" ).submit(function( event ) {
     console.log( "Handler for .submit() called." );
+    ga('send', 'event', 'Search', 'Submit', 'Searchbar submit');
     window.location.href = "searchresults.html";
   });
