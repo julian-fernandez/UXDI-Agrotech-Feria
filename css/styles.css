@@ -9,7 +9,10 @@ body {
 p{
     margin:0;
 }
-
+a {
+    color: #000000; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 *{
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
