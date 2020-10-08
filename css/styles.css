@@ -243,7 +243,43 @@ footer{
     display: flex;
     flex-wrap: wrap;
   }
-  .row.display-flex > [class*='col-'] {
+.row.display-flex > [class*='col-'] {
     display: flex;
     flex-direction: column;
-  }
+}
+.div-top-position{
+    position: relative;
+    top: -20px;
+    border-radius: 10px;
+  
+}
+.ico-grupo-position{
+    top: -21px;
+    position: relative;
+}
+.card-position{
+    position: initial !important;
+}
+.h5-position{
+    font-weight: bold;
+    text-align: left;
+}
+.p-color{
+    color: #1a181863;
+}
+.p-aling{
+    text-align: left;
+}
+.card-back{
+    background-color: #ffffff00;
+}
+.conteiner-sty{
+    position: relative;
+    top: -30px;
+    border-radius: 15px;
+}
+.p-font-precio{
+    font-weight: bold;
+    color: #00BC56;
+    font-size: 20px;
+}
